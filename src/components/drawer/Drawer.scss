@@ -1,0 +1,117 @@
+.drawer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 30px;
+    position: absolute;
+    right: 0;
+    width: 395px;
+    height: 100vh;
+    background-color: #fff;
+    &-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .3);
+        z-index: 10;
+    }
+    &-total, &-tax {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &-doted {
+            flex: 1;
+            height: 1px;
+            border-bottom: 1px dashed #dfdfdf;
+            position: relative;
+            top: -4px;
+            margin: 0 7px;
+        }
+    }
+    &-cart {
+        .greenButton {
+            &:disabled {
+                background-color: #bebebe;
+                cursor: default;
+            }
+        }
+    }
+    
+}
+.greenButton {
+	height: 55px;
+    width: 250px;
+	background: #9DD558;
+	border-radius: 18px;
+	border: 0;
+	font-size: 16px;
+	color: #fff;
+	transition: background 0.1s ease-in-out;
+    position: relative;
+    &:disabled {
+        animation: button-loading 1s ease-in-out infinite;
+    }
+    &:hover {
+        img {
+            transform: translateX(5px);
+        }
+    }
+    img {
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        transition: transform 0.15s ease-in-out;
+    }
+	cursor: pointer;
+
+	&:hover {
+		background: lighten($color: #9DD558, $amount: 5%)
+	}
+	&:active {
+		background: lighten($color: #9DD558, $amount: 0.5%)
+	}
+}
+
+.card {
+    
+    h1 {
+        margin: 0;
+    }
+    &-wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        overflow: auto;
+        flex: 1;
+    }
+    &-item {
+        border: 1px solid #F3F3F3;
+        padding: 20px;
+        border-radius: 20px;
+        height: 120px;
+        
+    }
+    &-block {
+        &__price {
+            margin: 0;
+        }
+    }
+    
+}
+
+@keyframes button-loading {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

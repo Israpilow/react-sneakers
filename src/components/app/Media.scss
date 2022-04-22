@@ -1,0 +1,115 @@
+@media (max-width: 1199px) { 
+    .cart {
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 991px) { 
+    .cart {
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 575px) { 
+    .App {
+        padding: 15px;
+        padding-top: 30px;
+    }
+    .cart {
+        &-title {
+            font-size: 14px;
+        }
+        &-header {
+            flex-direction: column;
+        }
+        &-favorite {
+            padding: 50px 20px;
+        }
+    }
+    .header {
+        &-cart {
+            flex-direction: column;
+        }
+        &-title {
+            h2 {
+                font-size: 16px;
+            }
+            &-descr {
+                font-size: 14px;
+            }
+        }
+    }
+    .greenButton {
+        max-width: 289px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 491px) { 
+    .cart {
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            justify-content: space-around;
+        }
+        &-title {
+            font-size: 14px;
+        }
+        
+        h1 {
+            font-size: 22px;
+        }
+        &-empty {
+            margin-top: 40px;
+        }
+        
+    }
+    .header {
+        flex-direction: column;
+        // &-title {
+        //     display: none;
+        // }
+        &-block {
+            &__right {
+                margin-top: 20px;
+                justify-content: space-between;
+            }
+        }
+        &-cart {
+            a, img {
+                padding: 10px;
+            }
+        }
+    }
+    .drawer {
+        width: 100%;
+    }
+
+    .greenButton {
+        img {
+            display: none;
+        }
+    }
+
+}
+
+
+@media (max-width: 344px) {
+    .header {
+        &-cart {
+            a, img {
+                padding: 10px;
+            }
+        }
+    }
+
+}

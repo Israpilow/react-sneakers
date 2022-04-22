@@ -1,0 +1,20 @@
+.header {
+    padding-bottom: 44px;
+    border-bottom: 1px solid #EAEAEA;
+    &-title {
+        h2 {
+            margin: 0;
+        }
+    }
+    &-block {
+        &__right {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+        }
+    }
+    &-favorite__img {
+        margin-top: 5px;
+    }
+   
+}
