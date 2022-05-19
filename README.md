@@ -7,4 +7,5 @@ Stack:
 - Axios
 - SCSS
 - React Context
-- React Skeleton Link to sait: https://israpilow.github.io/react-sneakers
+- React Skeleton 
+- Link to sait: https://israpilow.github.io/react-sneakers
