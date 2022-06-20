@@ -1,6 +1,6 @@
 # React Sneakers
 
-<img src="https://github.com/Israpilow/react-sneakers/blob/master/public/img/sneakers.jpg" width="600"/>
+<img src="https://github.com/Israpilow/react-sneakers/blob/master/public/img/sneakers1.jpg" width="600"/>
 
 Online store of sneakers - React Sneakers
 
