@@ -10,6 +10,6 @@ Stack:
 - React Router
 - Axios
 - SCSS
-- React Context
+- React Context 
 - React Skeleton 
 - Link to sait: https://israpilow.github.io/react-sneakers
